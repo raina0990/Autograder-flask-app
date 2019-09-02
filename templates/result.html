@@ -1,0 +1,23 @@
+<html>
+    <title >
+        Result page
+    </title>
+    
+
+    <body font=
+        <h1 style="text-align:center;font-size:xx-large"> Auto Grader Basic System</h1>
+        <h1 style="text-align:center;font-size:xx-large"> Result</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <h5> Score: {{message}} out of 2 correct. </h5>
+                {% endfor %}        
+            {% endif %}
+        {% endwith%}
+        <p></p>
+    </body>
+</html>
