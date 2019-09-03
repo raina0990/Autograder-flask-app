@@ -11,14 +11,14 @@
         <br>
         <br>
         <br>
-        <p>Please upload walk.cc file </p>
+        <p>
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <h5> {message}} </h5>
+                    <h5> {{message}} </h5>
                 {% endfor %}        
             {% endif %}
         {% endwith%}
-        <p></p>
+        </p>
     </body>
 </html>
