@@ -1,5 +1,5 @@
 #!/bin/bash
-tmpoutput=`echo -e fred'\n' susan | ./a.out`
+tmpoutput=`echo -e freddy'\n' susan | ./a.out`
 CORRECT=0
 f1=`echo $tmpoutput | grep -q 'freddy'`
 if [ $? = 0 ]; then
