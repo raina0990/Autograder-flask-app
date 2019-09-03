@@ -35,7 +35,7 @@ def upload_file():
             subprocess.call("rm -f ./output", shell=True)
             retcode = subprocess.call("./test.sh", shell=True)
             message = "Score: " + str(retcode) + " out of 2 correct."
-            messgae2 = " Compiled and executed successfully !"
+            message2 = " Compiled and executed successfully !"
             print (message)
             print("*************Original submission*************")
             with open('walk.cc','r') as fs:
