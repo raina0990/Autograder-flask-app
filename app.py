@@ -40,8 +40,8 @@ def upload_file():
             print("*************Original submission*************")
             with open('walk.cc','r') as fs:
                 print(fs.read())
-                flash(message)
                 flash(message2)
+                flash(message)
             return render_template('result.html')
         elif (f.filename != 'walk.cc'):
             flash('Please upload walk.cc file only!')
